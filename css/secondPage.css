@@ -25,19 +25,23 @@
         text-align: center;
     }
     .typing{
+        
         display: inline-block;
         text-align: center;
+        
     }
     .type-out{
-        overflow: hidden;
-          border-right: .15em solid orange;
+          overflow: hidden;
+          border-left: 1px solid orange;
           white-space: nowrap;
           animation: 
-          typing 3s steps(30,end) forwards 8;
-          font-size: calc(15px + 2vw);
+          typing 3s steps(30,end) backwards 8;
+          font-size: calc(10px + 2vw);
           color: white;
           font-weight: 700;
           width: 0;
+          box-sizing: border-box;
+          direction: rtl;
     }
     @keyframes typing {
         0%{width: 0%;}
@@ -222,9 +226,7 @@
         color: #111;
         background-color: transparent;
     }
-    body{
-        direction: rtl;
-    }
+
     }
     
     @media all and (min-width:576px) and (max-width:767px){
